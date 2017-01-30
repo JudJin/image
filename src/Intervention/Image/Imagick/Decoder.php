@@ -60,7 +60,7 @@ class Decoder extends \Intervention\Image\AbstractDecoder
     {
         // currently animations are not supported
         // so GIF images are turned into static
-        if ( exif_imagetype( $this->data ) == 1 ){
+        if ( $object->getImageMimeType() == "image/gif" ){
             $object = $this->removeAnimation($object);
         }
 

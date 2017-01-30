@@ -41,7 +41,7 @@ abstract class AbstractDecoder
      *
      * @var mixed
      */
-    public $data;
+    private $data;
 
     /**
      * Creates new Decoder with data
